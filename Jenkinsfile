@@ -10,7 +10,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/Anil14433/pet_shop.git'
             }
         }
-        stage("maven") {
+        stage("build") {
             steps {
                 sh 'mvn clean package'
             }
